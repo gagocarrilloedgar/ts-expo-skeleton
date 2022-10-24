@@ -1,36 +1,48 @@
-# TypeScript Example
+# TypeScript Express API Bootstrap (base / project starter)
 
-<p>
-  <!-- iOS -->
-  <img alt="Supports Expo iOS" longdesc="Supports Expo iOS" src="https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff" />
-  <!-- Android -->
-  <img alt="Supports Expo Android" longdesc="Supports Expo Android" src="https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff" />
-  <!-- Web -->
-  <img alt="Supports Expo Web" longdesc="Supports Expo Web" src="https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff" />
-</p>
+This is a repository intended to serve as a starting point if you want to bootstrap a express API project in TypeScript.
 
-```sh
-npx create-react-native-app -t with-typescript
+## Features
+
+- [TypeScript](https://www.typescriptlang.org/) (v4)
+- [ts-node-dev](https://github.com/wclr/ts-node-dev)
+- [Prettier](https://prettier.io/)
+- [ESLint](https://eslint.org/) with:
+  - [Simple Import Sort](https://github.com/lydell/eslint-plugin-simple-import-sort/)
+  - [Import plugin](https://github.com/benmosher/eslint-plugin-import/)
+- [Jest](https://jestjs.io) with [DOM Testing Library](https://testing-library.com/docs/dom-testing-library/intro)
+- [GitHub Action workflows](https://github.com/features/actions) set up to run tests and linting on push
+
+## Running the app
+
+```bash
+# install dependencies
+yarn install
+
+# run in web mode
+yarn web
+
+# run in android
+yarn android
+
+# run in ios
+yarn ios
 ```
 
-TypeScript is a superset of JavaScript which gives you static types and powerful tooling in Visual Studio Code including autocompletion and useful inline warnings for type errors.
+## Testing
 
-## 🚀 How to use
+### Jest with supertest
 
-#### Creating a new project
+```bash
+yarn test
+```
 
-- Install the CLI: `npm i -g expo-cli`
-- Create a project: `npx create-react-native-app -t with-typescript`
-- `cd` into the project
+## Linting
 
-### Adding TypeScript to existing projects
+```bash
+# run linter
+yarn lint
 
-- Create a blank TypeScript config: `touch tsconfig.json`
-- Run `yarn start` or `npm run start` to automatically configure TypeScript
-- Rename files to TypeScript, `.tsx` for React components and `.ts` for plain typescript files
-
-> 💡 You can disable the TypeScript setup in Expo CLI with the environment variable `EXPO_NO_TYPESCRIPT_SETUP=1 expo start`
-
-## 📝 Notes
-
-- [Expo TypeScript guide](https://docs.expo.dev/versions/latest/guides/typescript/)
+# fix lint issues
+yarn lint:fix
+```
