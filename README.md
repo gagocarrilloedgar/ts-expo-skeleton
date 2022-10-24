@@ -1,17 +1,13 @@
-# TypeScript Express API Bootstrap (base / project starter)
+# TypeScript Expor Bootstrap (base / project starter)
 
-This is a repository intended to serve as a starting point if you want to bootstrap a express API project in TypeScript.
+This is a repository intended to serve as a starting point if you want to bootstrap an Expo project in TypeScript.
 
 ## Features
 
-- [TypeScript](https://www.typescriptlang.org/) (v4)
-- [ts-node-dev](https://github.com/wclr/ts-node-dev)
-- [Prettier](https://prettier.io/)
-- [ESLint](https://eslint.org/) with:
-  - [Simple Import Sort](https://github.com/lydell/eslint-plugin-simple-import-sort/)
-  - [Import plugin](https://github.com/benmosher/eslint-plugin-import/)
-- [Jest](https://jestjs.io) with [DOM Testing Library](https://testing-library.com/docs/dom-testing-library/intro)
-- [GitHub Action workflows](https://github.com/features/actions) set up to run tests and linting on push
+- [TypeScript](https://www.typescriptlang.org/)
+- [Expo](https://expo.dev/)
+- [Jest](https://jestjs.io) with [React Testing Library](https://testing-library.com/docs/dom-testing-library/intro)
+- [Babel](https://babeljs.io/)
 
 ## Running the app
 
@@ -35,14 +31,4 @@ yarn ios
 
 ```bash
 yarn test
-```
-
-## Linting
-
-```bash
-# run linter
-yarn lint
-
-# fix lint issues
-yarn lint:fix
 ```
